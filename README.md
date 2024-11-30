@@ -69,19 +69,27 @@
 
 ## Running the Application
 
-1. Install the dependencies:
+Please ensure you have **python** installed on your device.
+
+1. Clone the project
+2. Create a virtual environment and activate it.
+   ```sh
+    python -m venv venv
+    source venv/bin/activate (For MacOS)
+   ```
+3. Install the dependencies:
     ```sh
     pip install -r requirements.txt
     ```
 
-2. Run the FastAPI application:
+4. Run the FastAPI application:
     ```sh
     uvicorn main:app --reload
     ```
 
-3. Access the API documentation at `http://127.0.0.1:8000/docs`.
+5. Access the API documentation at `http://127.0.0.1:8000/docs`.
 
-4. Test with tools like Postman/Curl.
+6. Test with tools like Postman/Curl.
 
 ## License
 
