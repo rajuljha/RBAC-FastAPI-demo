@@ -28,6 +28,10 @@
 
 ## Roles and Permissions
 
+- **For creating roles, I have defined custom functions to add access permissions for the users in the form of dependant functions like `require_user` and `require_self_or_admin`.**
+- By creating newer functions, we can easily scale this system to handle multiple Roles that can be accessed and controlled.
+- Any route that needs special permissions can be implemented such that it requires these functions to be called first, which return the users that can access them only.
+
 ### Admin
 - Can view and update any admin's details.
 - Can view and update any moderator's details.
